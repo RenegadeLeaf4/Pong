@@ -42,7 +42,7 @@ class Ball():
             self.VEL_Y *= -1
 
     def draw(self, screen): 
-        pygame.draw.rect(screen, LIGHT_GREY, (self.rect))
+        pygame.draw.rect(screen, CORAL, (self.rect))
 
 class Player(): 
     VEL = 5 
@@ -65,7 +65,7 @@ class Player():
             self.rect.y += self.VEL
 
     def draw(self, screen): 
-        pygame.draw.rect(screen, LIGHT_GREY, (self.rect))
+        pygame.draw.rect(screen, LIGHT_BLUE, (self.rect))
 
 class Opponnent(): 
     VEL = 4.5 
@@ -80,7 +80,7 @@ class Opponnent():
         self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
 
     def draw(self, screen): 
-        pygame.draw.rect(screen, LIGHT_GREY, (self.rect)) 
+        pygame.draw.rect(screen, DARK_BLUE, (self.rect)) 
 
 def restart(ball, player, opponnent): 
     ball.VEL_X = random.choice((-5, 5))
