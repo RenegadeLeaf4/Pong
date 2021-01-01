@@ -29,7 +29,7 @@ class Ball():
         self.width = 10 
         self.height = 10
 
-        self.x  = (SCREEN_WIDTH / 2 - self.width / 2) 
+        self.x = (SCREEN_WIDTH / 2 - self.width / 2)
         self.y = (SCREEN_HEIGHT / 2 - self.height / 2)
 
         self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
